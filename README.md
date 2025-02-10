@@ -36,7 +36,8 @@ pair-programming/
 2. **Initialize the Go Module (if not already initialized):**
 
    ```sh
-   go mod init pair-programming
+   cd questionX
+   go mod init questionX
    go mod tidy
    ```
 
