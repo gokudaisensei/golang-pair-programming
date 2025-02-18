@@ -1,56 +1,65 @@
-# **Question 1: Determine if Leap Year or not**  
+# **Question 5: Check if a String is a Palindrome**  
 
 ## **Problem Statement**  
 
-Develop a program to determine if a given year is a leap year using control flow.
+Create a Go program that reads a string input and determines if it is a palindrome.
 
 ## **Requirements**  
 
-- The program should prompt the user to enter a year.  
-- It should use conditional statements (e.g., `if`, `else if`, `else`) to determine if the year is a leap year.  
-- The output should provide if the year is a leap year or not.  
+- The program should prompt the user to enter a string.
+- It should check if the string is the same forward and backward.
+- The output should indicate whether the input is a palindrome or not.
 
 ## **Example Execution**  
 
 ```sh
-Enter a year: 2024
-2024 is a leap year.
+Enter the string to check: racecar
+racecar is a palindrome.
+
+Enter the string to check: hello
+hello is not a palindrome.
 ```
 
 ## **Implementation Guidelines**  
 
 - Use the `fmt` package for input and output.  
 - Read user input using `fmt.Scanln`.  
-- Implement conditional logic to do the decision branch and determine if leap year or not.  
+- Implement logic to reverse the string and compare it with the original input.  
 
 ## **Expected Output**  
 
-For the input values `2017`, the output should be:  
+For the input value `racecar`, the output should be:  
 
 ```shell
-2017 is not a leap year.
+racecar is a palindrome.
+```
+
+For the input value `hello`, the output should be:  
+
+```shell
+hello is not a palindrome.
 ```
 
 ## **File Structure**  
 
 ```shell
-question3/
+question5/
 ├── main.go
 ├── go.mod
 ├── logic/
-    ├── question3.go
-    ├── question3_test.go
+    ├── question5.go
+    ├── question5_test.go
 └── README.md
 ```
 
 ## **Testing**  
 
-- A test file `question3_test.go` should be included to validate different cases.  
+- A test file `question5_test.go` should be included to validate different cases.  
 - Use Go's `testing` package to write unit tests.  
 
 ## **Run the Program**  
 
-To execute the program, navigate to the `question3` directory and run:  
+To execute the program, navigate to the `question5` directory and run:  
 
 ```sh
 go run main.go
